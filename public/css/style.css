@@ -3,43 +3,45 @@ html{
 }
 
 h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 64px;
+    font-family: monospace;
+    font-size: 74px;
 }
 
 h2{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 50px;
+    font-family: monospace;
+    font-size: 60px;
 }
 
 h3{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
+    font-family: monospace;
+    font-size: 50px;
 }
 
 h4{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: monospace;
+    font-size: 35px;
 }
 
 h5{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: monospace;
 }
 
 h6{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: monospace;
 }
 
 p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
+    font-family: monospace;
+    font-size: 25px;
 }
 
 div{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: monospace;
 }
 
 a{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: monospace;
+    font-size: 18px;
 }
 
 *{
@@ -89,7 +91,8 @@ a{
 }
 
 .div-element-s2{
-    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .h3-s2{
@@ -110,7 +113,6 @@ a{
 .taille-box-awesome{
     display: flex;
     justify-content: center;
-    width: 50%;
     padding-bottom: 3%;
 }
 
@@ -120,8 +122,12 @@ a{
     margin-top: 5%;
 }
 
+.taille-option{
+    font-size: 25px;
+}
+
 .border-rond{
-    border: solid 1px black;
+    border: solid 2px black;
     border-radius: 30%;
     padding: 20px;
     margin-left: 5%;
@@ -163,7 +169,7 @@ a{
 
 li{
     list-style: none;
-    padding-left: 20%;
+    padding-left: 15%;
     min-width: max-content;
 }
 
@@ -177,4 +183,67 @@ li{
     height: 100vh;
     width: 100%;
     background-color: #333;
+}
+
+.h3-s3{
+    color: wheat;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.taille-div-s3{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.btn-selecteur{
+    font-size: 25px;
+    color: wheat;
+    border: 1px solid;
+    max-width: min-content;
+    min-width: max-content;
+    border-radius: 10rem;
+    padding: 1%;
+}
+
+.margin-selecteur{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.box-parcours{
+    width: 80%;
+}
+
+.box-1{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-parcours{
+    font-size: 30px;
+    padding-bottom: 10%;
+}
+
+.color{
+    color: wheat;
+}
+
+.padding-p-parcours{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.img-box{
+    width: 30%;
 }

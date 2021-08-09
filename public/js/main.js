@@ -57,3 +57,25 @@ function colorWheat(i){
     tableauBox[i].style.transition = '1s';
     tableauAwesome[i].style.color = 'black';
 }
+
+var btnSelecteur = document.getElementsByClassName('btn-selecteur');
+var tableauBtnSelecteur = Array.from(btnSelecteur);
+
+tableauBtnSelecteur.forEach((element, index) => {
+    element.addEventListener('mouseover', function(){
+        backgrounBlack(index);
+    })
+    element.addEventListener('mouseout', function(){
+        backgroundcolorWheat(index)
+    })
+})
+
+function backgroundcolorBlack(i){
+    tableauBtnSelecteur[i].style.backgroundColor = 'black';
+    tableauBtnSelecteur[i].style.color = 'wheat';
+}
+
+function backgroundcolorWheat(i){
+    tableauBtnSelecteur[i].style.backgroundColor = 'wheat';
+    tableauBtnSelecteur[i].style.color = 'black';
+}
