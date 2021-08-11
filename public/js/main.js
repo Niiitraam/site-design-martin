@@ -63,19 +63,66 @@ var tableauBtnSelecteur = Array.from(btnSelecteur);
 
 tableauBtnSelecteur.forEach((element, index) => {
     element.addEventListener('mouseover', function(){
-        backgrounBlack(index);
+        backgroundcolorWheat(index);
     })
     element.addEventListener('mouseout', function(){
-        backgroundcolorWheat(index)
+        backgroundcolorBlack(index);
     })
 })
 
 function backgroundcolorBlack(i){
-    tableauBtnSelecteur[i].style.backgroundColor = 'black';
+    tableauBtnSelecteur[i].style.backgroundColor = 'transparent';
     tableauBtnSelecteur[i].style.color = 'wheat';
+    tableauBtnSelecteur[i].style.transition = '1s';
 }
 
 function backgroundcolorWheat(i){
     tableauBtnSelecteur[i].style.backgroundColor = 'wheat';
     tableauBtnSelecteur[i].style.color = 'black';
+    tableauBtnSelecteur[i].style.transition = '1s';
+}
+
+
+// image box
+
+var box1 = document.querySelector('.all-box-1');
+var box2 = document.querySelector('.all-box-2');
+var box3 = document.querySelector('.all-box-3');
+
+var btn1 = document.querySelector('.btn1-selecteur');
+var btn2 = document.querySelector('.btn2-selecteur');
+var btn3 = document.querySelector('.btn3-selecteur');
+
+btn1.addEventListener('click', boxTest1)
+btn2.addEventListener('click', boxTest2)
+btn3.addEventListener('click', boxTest3)
+
+function boxTest1(){
+    box1.classList.add('display-block');
+    box2.classList.remove('display-block');
+    box3.classList.remove('display-block');
+    box1.classList.remove('display-none')
+    box2.classList.add('display-none');
+    box3.classList.add('display-none');
+    console.log('gang')
+}
+
+function boxTest2(){
+    box2.classList.add('display-block');
+    box1.classList.remove('display-block');
+    box3.classList.remove('display-block');
+    box1.classList.add('display-none');
+    box2.classList.remove('display-none');
+    box3.classList.add('display-none');
+    console.log('gang2')
+}
+
+function boxTest3(){
+    box3.classList.add('display-block');
+    box2.classList.remove('display-block');
+    box1.classList.remove('display-block');
+    box1.classList.add('display-none');
+    box2.classList.add('display-none');
+    box3.classList.remove('display-none');
+    console.log('gang3')
 }

@@ -14,6 +14,7 @@
     @include('partial.start')
     @include('partial.about')
     @include('partial.parcours')
+    @include('partial.service')
 
     <script src="{{asset('js/main.js')}}"></script>
 </body>
