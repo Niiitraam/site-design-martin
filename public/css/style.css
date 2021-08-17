@@ -165,11 +165,11 @@ a{
     display: flex;
     align-items: center;
     justify-content: end;
+    position: relative;
 }
 
 li{
     list-style: none;
-    padding-left: 15%;
     min-width: max-content;
 }
 
@@ -177,7 +177,40 @@ li{
     text-decoration: none;
     transition: 0.5s;
     color: wheat;
+    transition: 0.5s;
+    font-weight: 100;
+    will-change: transform;
+    display: inline-block;
 }
+
+.div-margin{
+    margin-left: 10%;
+    position: relative;
+}
+
+.div-margin:hover .s1 a{
+    transform: translateY(-100%) rotateX(-90deg);
+}
+
+.div-margin:hover .s2 a{
+    transform: translateY(0%) rotateX(0deg);
+}
+
+.s1 a{
+    transform-origin: bottom;
+}
+
+.s2 a{
+    transform-origin: top;
+    transform: translateY(100%) rotateX(-90deg);
+}
+
+.s2{
+    position: absolute;
+    top: 0;
+}
+
+
 
 .section-3{
     height: 100vh;
