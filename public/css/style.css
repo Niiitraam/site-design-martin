@@ -49,7 +49,7 @@ a{
 }
 
 .section-1{
-    background-color: #333;
+    background-color: black;
     height: 100vh;
     width: 100vw;
 }
@@ -78,7 +78,7 @@ a{
 .section-2{
     height: 100vh;
     width: 100vw;
-    background-color: wheat;
+    background-color: white;
 }
 
 .div-s2{
@@ -164,7 +164,7 @@ a{
 .position-ul{
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: start;
     position: relative;
 }
 
@@ -176,7 +176,7 @@ li{
 .lien-navbar{
     text-decoration: none;
     transition: 0.5s;
-    color: wheat;
+    color: white;
     transition: 0.5s;
     font-weight: 100;
     will-change: transform;
@@ -215,11 +215,11 @@ li{
 .section-3{
     height: 100vh;
     width: 100%;
-    background-color: #333;
+    background-color: black;
 }
 
 .h3-s3{
-    color: wheat;
+    color: white;
     text-align: center;
     padding-top: 10vh;
 }
@@ -240,7 +240,7 @@ li{
 
 .btn-selecteur{
     font-size: 25px;
-    color: wheat;
+    color: white;
     border: 1px solid;
     max-width: min-content;
     min-width: max-content;
@@ -269,7 +269,7 @@ li{
 }
 
 .color{
-    color: wheat;
+    color: white;
 }
 
 .padding-p-parcours{
@@ -312,7 +312,7 @@ li{
 .section-4{
     height: 100vh;
     width: 100%;
-    background-color: wheat;
+    background-color: white;
 }
 
 .h3-s4{

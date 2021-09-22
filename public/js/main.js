@@ -49,11 +49,11 @@ tableauBox.forEach((element, index) => {
 function colorBlack(i){
     tableauBox[i].style.backgroundColor = 'black';
     tableauBox[i].style.transition = '1s';
-    tableauAwesome[i].style.color = 'wheat';
+    tableauAwesome[i].style.color = 'white';
 }
 
 function colorWheat(i){
-    tableauBox[i].style.backgroundColor = 'wheat';
+    tableauBox[i].style.backgroundColor = 'white';
     tableauBox[i].style.transition = '1s';
     tableauAwesome[i].style.color = 'black';
 }
@@ -72,12 +72,12 @@ tableauBtnSelecteur.forEach((element, index) => {
 
 function backgroundcolorBlack(i){
     tableauBtnSelecteur[i].style.backgroundColor = 'transparent';
-    tableauBtnSelecteur[i].style.color = 'wheat';
+    tableauBtnSelecteur[i].style.color = 'white';
     tableauBtnSelecteur[i].style.transition = '1s';
 }
 
 function backgroundcolorWheat(i){
-    tableauBtnSelecteur[i].style.backgroundColor = 'wheat';
+    tableauBtnSelecteur[i].style.backgroundColor = 'white';
     tableauBtnSelecteur[i].style.color = 'black';
     tableauBtnSelecteur[i].style.transition = '1s';
 }
